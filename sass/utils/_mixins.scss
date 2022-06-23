@@ -1,0 +1,7 @@
+@mixin transition($property...) {
+    transition: $property;
+}
+
+@mixin flex-basis($quantity) {
+    flex-basis: calc((100% - #{$quantity - 1} * 30px)/#{$quantity});
+}

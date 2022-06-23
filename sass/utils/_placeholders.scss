@@ -1,0 +1,15 @@
+%marginCentered {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+%flexTextCentered {
+  display: flex;
+  align-items: center;
+}
+
+%flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

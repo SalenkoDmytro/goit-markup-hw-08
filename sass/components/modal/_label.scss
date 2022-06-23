@@ -1,0 +1,69 @@
+.label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+}
+
+.label__container {
+  position: relative;
+  display: flex;
+}
+
+.label__input {
+  outline: none;
+  width: 100%;
+  min-height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  @include transition(border-color $timing $cubic);
+
+    &:not(:last-child) {
+        padding-left: 42px;
+      }
+
+    &:focus{border-color: $accent-color}
+
+    .label__container:hover & {
+      border-color: $accent-color;
+    }
+}
+
+.label__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  fill: currentColor;
+
+  transform: translateY(-50%);
+  @include transition(fill $timing $cubic);
+
+  .label__input:focus+& {
+      fill: $accent-color;
+    }
+
+        .label__container:hover & {
+          fill: $accent-color;
+        }
+}
+
+
+.label__textarea {
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+
+  &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+}
+
