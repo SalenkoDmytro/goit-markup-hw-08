@@ -1,0 +1,34 @@
+.clients__title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__item{
+  @include flex-basis(6);
+}
+.clients__link {
+  @extend %flexCentered;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  fill: $icon-color;
+
+  @include transition(border-color $timing $cubic, fill $timing $cubic);
+&:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
+

@@ -1,0 +1,30 @@
+.social {
+  @extend %flexCentered;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.social__item {
+  margin-bottom: 0;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.social__link {
+ @extend %flexCentered;
+  width: 44px;
+  height: 44px;
+
+  fill: inherit;
+  border-radius: 50%;
+}
+
+.team__social {
+  fill: $icon-color;
+  @include transition(background-color $timing $cubic, fill $timing $cubic);
+&:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $third-text-color;
+  }
+}
+
