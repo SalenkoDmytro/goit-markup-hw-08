@@ -12,7 +12,7 @@
   gap: 30px;
 }
 
-.clients__item{
+.clients__item {
   @include flex-basis(6);
 }
 .clients__link {
@@ -25,10 +25,9 @@
   fill: $icon-color;
 
   @include transition(border-color $timing $cubic, fill $timing $cubic);
-&:hover,
+  &:hover,
   &:focus {
     fill: $accent-color;
     border-color: $accent-color;
   }
 }
-

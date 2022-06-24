@@ -1,23 +1,32 @@
-@import "./utils/vars";
-@import "./utils/mixins";
-@import "./utils/base";
-@import "./utils/placeholders";
-@import "./components/common/logo";
-@import "./components/common/header";
-@import "./components/common/contacts";
-@import "./components/main/hero";
-@import "./components/main/features";
-@import "./components/main/works";
-@import "./components/main/team";
-@import "./components/common/social";
-@import "./components/main/clients";
-@import "./components/common/footer";
-@import "./components/common/subscribe";
-@import "./components/common/btn";
-@import "./components/modal/backdrop";
-@import "./components/modal/modal";
-@import "./components/modal/form";
-@import "./components/modal/label";
-@import "./components/modal/policy";
-@import "./components/portfolio/filters";
-@import "./components/portfolio/card-set";
+@import './utils/vars';
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './components/reset';
+@import './components/container';
+@import './components/base';
+
+@import './components/common/logo';
+@import './components/common/header';
+@import './components/common/contacts';
+
+@import './components/main/hero';
+@import './components/main/features';
+@import './components/main/works';
+@import './components/main/team';
+@import './components/main/clients';
+
+@import './components/common/social';
+@import './components/common/footer';
+@import './components/common/subscribe';
+@import './components/common/btn';
+
+@import './components/modal/backdrop';
+@import './components/modal/modal';
+@import './components/modal/form';
+@import './components/modal/label';
+@import './components/modal/policy';
+
+@import './components/portfolio/filters';
+@import './components/portfolio/card-set';
