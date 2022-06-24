@@ -1,19 +1,31 @@
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: $primary-text-color;
+  @include mq(desc) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients__item {
-  @include flex-basis(6);
+  @include flex-basis(2);
+
+  @include mq(tab) {
+    @include flex-basis(3);
+  }
+  @include mq(desc) {
+    @include flex-basis(6);
+  }
 }
 .clients__link {
   @extend %flexCentered;

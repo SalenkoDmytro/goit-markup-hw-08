@@ -33,6 +33,9 @@
   background-color: $primary-bg-color;
   @include mq(tab) {
     margin-bottom: 0;
+    @include flex-basis(2);
+  }
+  @include mq(desc) {
     @include flex-basis(4);
   }
 }

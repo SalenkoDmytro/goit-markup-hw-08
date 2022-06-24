@@ -1,24 +1,39 @@
 .footer {
   background-color: $black-bg-color;
+  &__join {
+    text-align: center;
+    margin-bottom: 60px;
+    @include mq(desc) {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   color: $third-text-color;
+  @include mq(desc) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__adress {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.71;
+  @include mq(desc) {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }
 
 .footer__link {
   display: block;
-  margin-top: 9px;
+  margin-top: 8px;
 
   color: $footer-link-color;
   font-style: normal;
@@ -27,13 +42,15 @@
   text-decoration: none;
 
   @include transition(color $timing $cubic);
-  
-  &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-}
+  @include mq(desc) {
+    margin-top: 9px;
+  }
 
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
 
 .footer__text {
   display: block;
@@ -48,16 +65,14 @@
 .footer__social {
   margin-top: 0;
   &--hovered {
-      fill: $third-text-color;
-      background: rgba(255, 255, 255, 0.1);
-  
-      @include transition(background-color $timing $cubic);
+    fill: $third-text-color;
+    background: rgba(255, 255, 255, 0.1);
 
-      &:hover,
-      &:focus {
-          background-color: $accent-color;
-        }
+    @include transition(background-color $timing $cubic);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
     }
+  }
 }
-
-

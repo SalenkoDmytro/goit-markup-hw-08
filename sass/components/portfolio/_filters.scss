@@ -1,6 +1,22 @@
 .filters__list {
- display: flex;
-  justify-content: center; 
-   margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-bottom: 40px;
   gap: 8px;
+  @include mq(tab) {
+    margin-top: 0;
+
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include mq(desc) {
+    margin-bottom: 50px;
+  }
+}
+.filters__item {
+  margin-top: 15px;
+  @include mq(tab) {
+    margin-top: 0;
+  }
 }

@@ -1,16 +1,20 @@
 .social {
-  @extend %flexCentered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
-  gap: 10px;
+  margin-left: -10px;
 }
 
 .social__item {
-  margin-bottom: 0;
-  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 10px;
+  width: 44px;
 }
 
 .social__link {
- @extend %flexCentered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 
@@ -21,10 +25,9 @@
 .team__social {
   fill: $icon-color;
   @include transition(background-color $timing $cubic, fill $timing $cubic);
-&:hover,
+  &:hover,
   &:focus {
     background-color: $accent-color;
     fill: $third-text-color;
   }
 }
-
