@@ -14,6 +14,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
   color: $third-text-color;
+  @include mq(tab-only) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   @include mq(desc) {
     display: flex;
     align-items: baseline;

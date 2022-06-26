@@ -1,0 +1,21 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button__close {
+  .menu-button & {
+    display: none;
+  }
+  .menu-button.is-open & {
+    display: block;
+  }
+}
+
+.menu-button__menu {
+  .menu-button.is-open & {
+    display: none;
+  }
+}

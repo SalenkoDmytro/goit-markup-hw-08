@@ -1,6 +1,7 @@
 .subscribe {
   text-align: center;
-  @include mq(tab) {
+  @include mq(tab-only) {
+    width: 450px;
   }
   @include mq(desc) {
     margin-left: auto;
@@ -14,8 +15,9 @@
 }
 
 .subscribe__input {
+  @include mq(mob-only) {
+  }
   height: 50px;
-  width: 100%;
   padding-left: 16px;
   width: 358px;
 
@@ -27,6 +29,11 @@
   border-radius: 4px;
   background-color: $black-bg-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  @include mq(noDesc) {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe__icon {

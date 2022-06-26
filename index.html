@@ -16,7 +16,7 @@
 
 <body>
   <!-- Шапка -->
-  <header class="header">
+  <!-- <header class="header">
     <div class=" header__container container">
       <nav class="header__nav">
         <a class="logo link" href="/">Web<span class="header__logo">Studio</span></a>
@@ -34,6 +34,13 @@
         </ul>
       </nav>
 
+      <button class="menu-button" data-menu-button type="button" aria-expanded="false">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="menu-button__close" href="./images/icons.svg#icon-close_menu"></use>
+          <use class="menu-button__menu" href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
       <ul class="contacts list">
         <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link link">
             <svg class="contacts__icon" width="16" height="12">
@@ -47,7 +54,7 @@
       </ul>
     </div>
 
-  </header>
+  </header> -->
 
   <main>
     <!-- Услуга -->
@@ -288,7 +295,7 @@
   </main>
 
   <!-- Подвал -->
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer__container container">
       <div class="footer__adress">
         <a class="logo link footer__logo" href="/">Web<span class="footer__logo--white-text">Studio</span></a>
@@ -333,7 +340,7 @@
       </div>
     </div>
 
-  </footer> -->
+  </footer>
 
   <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal is-hidden">
@@ -398,7 +405,8 @@
     </div>
   </div> -->
 
-  <script src="./modal.js"></script>
+  <script src="./sass/components/js/modal.js"></script>
+  <script src="./sass/components/js/menu.js"></script>
 
 </body>
 

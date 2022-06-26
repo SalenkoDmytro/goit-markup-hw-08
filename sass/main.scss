@@ -8,8 +8,11 @@
 @import './components/base';
 
 @import './components/common/logo';
-@import './components/common/header';
+@import './components/common/header/menu-button';
+@import './components/common/header/header';
+@import './components/common/btn';
 @import './components/common/contacts';
+@import './components/common/social';
 
 @import './components/main/hero';
 @import './components/main/features';
@@ -17,10 +20,8 @@
 @import './components/main/team';
 @import './components/main/clients';
 
-@import './components/common/social';
-@import './components/common/footer';
-@import './components/common/subscribe';
-@import './components/common/btn';
+@import './components/common/footer/footer';
+@import './components/common/footer/subscribe';
 
 @import './components/modal/backdrop';
 @import './components/modal/modal';
