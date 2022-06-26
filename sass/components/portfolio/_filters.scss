@@ -1,12 +1,12 @@
 .filters__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -15px;
   margin-bottom: 40px;
   gap: 8px;
+  @include mq(mob-only) {
+    margin-top: -15px;
+  }
   @include mq(tab) {
-    margin-top: 0;
-
     justify-content: center;
     margin-bottom: 30px;
   }
@@ -15,8 +15,7 @@
   }
 }
 .filters__item {
-  margin-top: 15px;
-  @include mq(tab) {
-    margin-top: 0;
+  @include mq(mob-only) {
+    margin-top: 15px;
   }
 }

@@ -14,13 +14,15 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .clients__item {
-  @include flex-basis(2);
-
-  @include mq(tab) {
+  @include mq(mob-only) {
+    @include flex-basis(2);
+  }
+  @include mq(tab-only) {
     @include flex-basis(3);
   }
   @include mq(desc) {
@@ -29,7 +31,7 @@
 }
 .clients__link {
   @extend %flexCentered;
-  width: 170px;
+  width: 100%;
   height: 92px;
 
   border: 1px solid $icon-color;

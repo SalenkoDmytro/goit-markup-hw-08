@@ -1,7 +1,8 @@
 .card-set {
-  margin-bottom: -30px;
+  @include mq(mob-only) {
+    margin-bottom: -30px;
+  }
   @include mq(tab) {
-    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -17,9 +18,11 @@
 }
 
 .card-set__item {
-  margin-bottom: 30px;
+  @include mq(mob-only) {
+    margin-bottom: 30px;
+  }
+
   @include mq(tab) {
-    margin-bottom: 0;
     @include flex-basis(2);
   }
   @include mq(desc) {
@@ -28,7 +31,9 @@
 }
 
 .card-set__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   color: currentColor;
   text-decoration: none;
@@ -71,6 +76,7 @@
 }
 
 .card-set__card {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border: 1px solid #eeeeee;

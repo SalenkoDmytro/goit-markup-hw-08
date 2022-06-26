@@ -1,7 +1,8 @@
 .features__list {
-  margin-bottom: -30px;
+  @include mq(mob-only) {
+    margin-bottom: -30px;
+  }
   @include mq(tab) {
-    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -9,10 +10,10 @@
 }
 
 .features__item {
-  margin-bottom: 30px;
-
+  @include mq(mob-only) {
+    margin-bottom: 30px;
+  }
   @include mq(tab) {
-    margin-bottom: 0;
     @include flex-basis(2);
   }
   @include mq(desc) {

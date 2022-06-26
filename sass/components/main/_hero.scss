@@ -1,4 +1,7 @@
 .hero {
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg-img.jpg);
@@ -6,17 +9,17 @@
   background-position: center;
   background-size: cover;
 
-  @include mq(tab) {
-  }
   @include mq(desc) {
     max-width: 1600px;
-    padding: 200px auto;
   }
 }
 
 .hero__container {
   padding: 118px 60px;
   text-align: center;
+  @include mq(desc) {
+    padding: 200px auto;
+  }
 }
 
 .hero__title {

@@ -1,7 +1,8 @@
 .works {
-  display: none;
+  @include mq(noDesc) {
+    display: none;
+  }
   @include mq(desc) {
-    display: contents;
     padding-top: 0;
   }
 }
