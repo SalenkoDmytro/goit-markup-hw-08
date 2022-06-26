@@ -1,18 +1,30 @@
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
   padding: 40px;
 
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @include transition(transform $timing $cubic, visibility $timing $cubic);
+
+  @include mq(mob-only) {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  @include mq(tab) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+
     transform: translate(-50%, -50%) scale(1);
-    @include transition(transform $timing $cubic, visibility $timing $cubic);
+  }
+  @include mq(desc) {
+    min-width: 528px;
+  }
 }
 
 .btn--close {
@@ -33,8 +45,7 @@
   @include transition(fill $timing $cubic);
 
   &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
+  &:focus {
+    fill: $accent-color;
+  }
 }
-

@@ -1,21 +1,48 @@
 .menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  display: none;
+  @include mq(mob-only) {
+    display: inline-flex;
+    margin-left: auto;
+    padding: 0;
+    cursor: pointer;
+
+    color: $logo-color;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+  }
 }
 .menu-button__close {
-  .menu-button & {
-    display: none;
-  }
-  .menu-button.is-open & {
-    display: block;
+  @include mq(mob-only) {
+    transition: fill $timing $cubic;
+
+    .menu-button:hover &,
+    .menu-button:focus & {
+      fill: $accent-color;
+    }
+    .menu-button & {
+      display: none;
+    }
+    .menu-button.is-open & {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+
+      display: block;
+    }
   }
 }
 
 .menu-button__menu {
-  .menu-button.is-open & {
-    display: none;
+  @include mq(mob-only) {
+    transition: fill $timing $cubic;
+
+    .menu-button:hover &,
+    .menu-button:focus & {
+      fill: $accent-color;
+    }
+    .menu-button.is-open & {
+      display: none;
+    }
   }
 }

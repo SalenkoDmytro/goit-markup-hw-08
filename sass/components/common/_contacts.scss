@@ -1,32 +1,78 @@
 .contacts {
-  display: flex;
-  margin-left: auto;
+  @include mq(mob-only) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+  @include mq(tab) {
+    margin-left: auto;
 
-  color: $secondary-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  @include mq(desc) {
+    display: flex;
+  }
 }
 
 .contacts__item:last-child {
-  margin-left: 50px;
+  @include mq(tab-only) {
+    margin-top: 10px;
+  }
+  @include mq(desc) {
+    margin-left: 30px;
+  }
 }
 
 .contacts__link {
-  @extend %flexTextCentered;
+  @include mq(mob-only) {
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 24px;
+    line-height: 1.17;
+    color: $secondary-text-color;
 
-  color: $secondary-text-color;
+    &--blue {
+      margin-bottom: 32px;
+      font-size: 34px;
+      line-height: 1.17;
+      color: $accent-color;
+    }
+  }
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    fill: currentColor;
+    @include transition(color $timing $cubic);
 
-  fill: currentColor;
-  @include transition(color $timing $cubic);
-
-  &:hover,
+    &:hover,
     &:focus {
       color: $accent-color;
     }
+  }
 }
 
 .contacts__icon {
-  margin-right: 10px;
+  @include mq(mob-only) {
+    display: none;
+  }
+  @include mq(tab-only) {
+    margin-right: 8px;
+    &--smaller-envelope {
+      width: 14px;
+      height: 10px;
+    }
+    &--smaller-smartphone {
+      width: 10px;
+      height: 14px;
+    }
+  }
+  @include mq(desc) {
+    margin-right: 10px;
+  }
 }
