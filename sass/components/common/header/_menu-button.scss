@@ -9,7 +9,12 @@
     color: $logo-color;
     border: none;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
+    &.is-open {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+    }
   }
 }
 .menu-button__close {
@@ -24,10 +29,6 @@
       display: none;
     }
     .menu-button.is-open & {
-      position: fixed;
-      top: 10px;
-      right: 15px;
-
       display: block;
     }
   }

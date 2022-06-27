@@ -15,14 +15,15 @@
     position: relative;
   }
   @include mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  @include mq(desc) {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
-
     transform: translate(-50%, -50%) scale(1);
-  }
-  @include mq(desc) {
     min-width: 528px;
   }
 }

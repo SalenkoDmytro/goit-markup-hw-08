@@ -28,7 +28,9 @@
         </svg>
       </button>
 
+
       <div class="menu-container" id="menu-container" data-menu>
+
         <nav class="header__nav">
           <ul class="header__list list ">
             <li class="header__item">
@@ -58,10 +60,10 @@
 
 
           <ul class="menu-container__socials list">
-            <li class="socials__item"><span class="socials__text">Instagram</span> </li>
-            <li class="socials__item"><span class="socials__text">Twitter</span> </li>
-            <li class="socials__item"><span class="socials__text">Facebook</span></li>
-            <li class="socials__item"><span class="socials__text">LinkedIn</span> </li>
+            <li class="socials__item"><a class="socials__link link" href="/">Instagram</a> </li>
+            <li class="socials__item"><a class="socials__link link" href="/">Twitter</a> </li>
+            <li class="socials__item"><a class="socials__link link" href="/">Facebook</a></li>
+            <li class="socials__item"><a class="socials__link link" href="/">LinkedIn</a> </li>
           </ul>
         </div>
 
@@ -138,15 +140,18 @@
         <h2 class="works__title">Чем мы занимаемся</h2>
         <ul class="works__list list">
           <li class="works__item">
-            <img src="./images/img1.jpg" alt="Работа за компьютером" width="370" height="295">
+            <img srcset="./images/work-01.jpg 1x, ./images/work-01@2x.jpg 2x" src="./images/work-01.jpg"
+              alt="Десктопные приложения">
             <p class="works__text">Десктопные приложения</p>
           </li>
           <li class="works__item">
-            <img src="./images/img2.jpg" alt="Работа в телефоне" width="370" height="295">
+            <img srcset="./images/work-02.jpg 1x, ./images/work-02@2x.jpg 2x" src="./images/work-02.jpg"
+              alt="Мобильные приложения">
             <p class="works__text">Мобильные приложения</p>
           </li>
           <li class="works__item">
-            <img src="./images/img3.jpg" alt="Работа на планшете" width="370" height="295">
+            <img srcset="./images/work-03.jpg 1x, ./images/work-03@2x.jpg 2x" src="./images/work-03.jpg"
+              alt="Дизайнерские решения">
             <p class="works__text">Дизайнерские решения</p>
           </li>
         </ul>
@@ -159,7 +164,12 @@
         <h2 class="team__heading">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__item">
-            <img src="./images/igor.jpg" alt="Фото Игоря" width="270" height="260">
+            <picture>
+              <source srcset="./images/team-01-270.jpg 1x, ./images/team-01-270@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team-01-354.jpg 1x,./images/team-01-354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-01-450.jpg 1x, ./images/team-01-450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team-01-450.jpg" alt="Игорь Демьяненко">
+            </picture>
             <div class="team__card">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text">Product Designer</p>
@@ -185,7 +195,12 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/olga.jpg" alt="Фото Ольги" width="270" height="260">
+            <picture>
+              <source srcset="./images/team-02-270.jpg 1x, ./images/team-02-270@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team-02-354.jpg 1x, ./images/team-02-354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-02-450.jpg 1x, ./images/team-02-450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team-02-450.jpg" alt="Ольга Репина">
+            </picture>
             <div class="team__card">
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__text">Frontend Developer</p>
@@ -210,7 +225,12 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/nikolay.jpg" alt="Фото Николая" width="270" height="260">
+            <picture>
+              <source srcset="./images/team-03-270.jpg 1x, ./images/team-03-270@2x.jpg 2x " media="(min-width: 1200px)">
+              <source srcset="./images/team-03-354.jpg 1x, ./images/team-03-354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-03-450.jpg 1x, ./images/team-03-450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team-03-450.jpg" alt="Николай Тарасов">
+            </picture>
             <div class="team__card">
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__text">Marketing</p>
@@ -235,7 +255,12 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/michael.jpg" alt="Фото Михаила" width="270" height="260">
+            <picture>
+              <source srcset="./images/team-04-270.jpg 1x, ./images/team-04-270@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team-04-354.jpg 1x, ./images/team-04-354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-04-450.jpg 1x, ./images/team-04-450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team-04-450.jpg" alt="Михаил Ермаков">
+            </picture>
             <div class="team__card">
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__text">UI Designer</p>
@@ -412,8 +437,9 @@
           <svg class="policy__icon" width="16" height="15">
             <use href="./images/icons.svg#icon-check"></use>
           </svg>
-          Соглашаюсь с рассылкой и принимаю
-          <a href="" class="policy__link">Условия договора</a> </label>
+          <span>Соглашаюсь с рассылкой и принимаю
+            <a href="" class="policy__link">Условия договора</a> </label>
+        </span>
         <button class="btn btn__primary modal__btn" type="submit">Отправить</button>
 
       </form>

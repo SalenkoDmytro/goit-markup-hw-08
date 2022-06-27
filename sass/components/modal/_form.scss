@@ -13,6 +13,9 @@
   @include mq(desc) {
     line-height: 1.15;
   }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 .form__container {
