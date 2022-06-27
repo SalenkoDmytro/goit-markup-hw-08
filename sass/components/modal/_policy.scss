@@ -6,7 +6,7 @@
   line-height: 1.17;
   color: $secondary-text-color;
   @media (max-width: 320px) {
-    font-size: 6px;
+    font-size: 10px;
   }
   @include mq(desc) {
     font-size: 14px;
