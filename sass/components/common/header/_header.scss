@@ -53,9 +53,10 @@
   }
 }
 .header__link--current {
+  color: $accent-color;
+
   @include mq(tab) {
     position: relative;
-    color: $accent-color;
     &::after {
       content: '';
       position: absolute;
