@@ -58,6 +58,10 @@
       color: $accent-color;
     }
   }
+  @include mq(desc) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
